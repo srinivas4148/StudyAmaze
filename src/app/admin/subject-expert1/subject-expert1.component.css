@@ -1,0 +1,31 @@
+*{
+    font-size: 14px !important;
+    text-transform: none !important;
+
+}
+.katex {
+    font-size: 1.1em;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 600 !important;
+}
+
+.qs{
+    border-radius: 12px;
+}
+.mat-raised-button{
+    background-color: #80c9f0;
+}
+.mat-raised-button:hover{
+    background-color: lightseagreen;
+}
+.mat-card{
+    color: rgb(79 103 109);
+}
+.qcolor{
+    font-size: 16px;
+    font-weight: 700;
+    color: blue;
+}
+
+
+ 

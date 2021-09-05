@@ -1,0 +1,30 @@
+button{
+    outline: none;
+}
+.fancy-tab-form{
+    width: 50%;
+    border-radius: 5px;
+    background-color: #FF9671;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+/* .tab-header{
+    border-bottom: 2px solid darkgray;
+} */
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+.active{
+    background-color: white;
+    color: #FF9671;
+    border-radius:5px ;
+}
+input.input-role,input.input-usertype{
+    width: 80%;
+    border: none;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+}

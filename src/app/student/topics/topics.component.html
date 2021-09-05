@@ -1,0 +1,50 @@
+<div class="star container-fluid">
+    <div class="topics-bg">
+      <div class="breadcrumbss">
+        <ul class="breadcrumb">
+          <div class="fat-arrow">
+            <div class="inner" (click)="goToStandards()" style="color: #dee2e6;">Class&nbsp;{{ standardName }}</div>
+          </div>
+          <div class="fat-arrow">
+            <div class="inner" (click)="goToSubjects()" style="color: #dee2e6;">{{ subjectName }}</div>
+          </div>
+          <div class="fat-arrow">
+            <div class="inner" style="color: #dee2e6;">Select Topic</div>
+          </div>
+        </ul>
+      </div>
+  
+      <div class="all-topicss mx-auto" *ngIf="fetchedTopics.length;else noTopics">
+        <div class="d-flex row">
+          <div class="col-md-3 topic-cardd my-2" *ngFor="let topic of fetchedTopics;let i=index">
+  
+            <mat-card mat-stroked-button color="primary" style="cursor: pointer;" [ngClass]="{'active':checking===i}"
+              (click)="practise(topic.topicId,topic.topic)">
+              <div class="txt-topic my-auto text-center"> {{ topic.topic }} </div>
+              <!-- <div class="d-flex">
+                  <div class="txt-topic my-auto text-center"> {{ topic.topic }} </div>
+                  <div *ngIf="topic.subjectIdFk==11 || topic.subjectIdFk==16 || topic.subjectIdFk==21" class="pull-right ml-auto"> 
+                  <img src="../../assets/maths (1).png" width="40" height="40">
+                  </div>
+                  <div *ngIf="topic.subjectIdFk==12 || topic.subjectIdFk==17 || topic.subjectIdFk==22" class="pull-right ml-auto"> 
+                    <img src="../../assets/physics-icon.png" width="40" height="40">
+                  </div>
+                  <div *ngIf="topic.subjectIdFk==13 || topic.subjectIdFk==18 || topic.subjectIdFk==23" class="pull-right ml-auto"> 
+                    <img src="../../assets/flask.png" width="40" height="40">
+                  </div>
+                </div> -->
+            </mat-card>
+  
+          </div>
+        </div>
+      </div>
+  
+      <ng-template #noTopics>
+        <div class="py-5 text-center">
+          <h5>No topics to show</h5>
+        </div>
+      </ng-template>
+  
+      <br />
+    </div>
+  </div>

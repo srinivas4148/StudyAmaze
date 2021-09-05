@@ -1,0 +1,58 @@
+.head-tag{
+    color: darkgray;
+}
+.user-name p{
+    color: gray;
+    letter-spacing: 0.01em;
+}
+.user-mobile p{
+    color: gray;
+    letter-spacing: 0.01em;
+}
+.user-points p{
+    color: gray;
+    letter-spacing: 0.01em;
+}
+.mat-title{
+    color: darkgray;
+    font-size: 30px;
+}
+.mat-sub-title{
+    color: darkgray;
+    font-size: 20px;
+}
+.red-icon{
+    color: red;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.red-icon svg{
+    fill: red;
+    font-size: 17px;
+}
+.green-icon{
+    color: green;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+.green-icon svg{
+    fill: green;
+    font-size: 17px;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+p.sub-head-line{
+    font-size: 20px;
+    color: darkgray;
+    font-weight: bold;
+    line-height: 30px;
+    text-decoration: none;
+    background-image: linear-gradient(transparent, transparent),linear-gradient(transparent, transparent),linear-gradient(to right, #72ee24, #487bd6);
+    background-repeat: no-repeat;
+    background-position: 120%, 122%, 0 130%;
+    background-size: 100% 10px;
+}

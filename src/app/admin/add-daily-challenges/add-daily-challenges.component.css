@@ -1,0 +1,29 @@
+.q-card{
+    background: white;
+    border-radius: 5px;
+}
+button{
+    outline: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.qid{
+    background: #186c84;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: inset 0 0 10px #186c84;
+    border-radius: 4px;
+    padding: 4px 4px 0px 4px;
+}
+span{
+    font-size: 14px;
+}
+.que{
+    color: #007bff;
+    font-size: 16px;
+}

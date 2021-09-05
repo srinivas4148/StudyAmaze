@@ -1,0 +1,41 @@
+<div style="min-height: 277px;">
+    <div class="container-fluid">
+
+        <div class="row d-flex my-2 mx-3">
+            <div> <span class="head-tag">Assignments</span> 
+                <div class="pull-right"> <button mat-icon-button> <i class="fas fa-filter"></i> </button> </div>    
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3 my-2" *ngFor="let a of assignments" (click)="goToQuestions(a.aid,a.status)">
+                <mat-card>
+                    <div class="py-1">
+                        <h4>{{ a.title }}</h4>
+                    </div>
+                    <div class="py-1">
+                        {{ a.standard }}-{{ a.subject }}-{{ a.topic }}
+                    </div>
+
+                    <div class="py-1">
+                        <span> Questions : {{ a.noOfQuestions }} </span>
+                    </div>
+
+                    <div class="py-1">
+                        <span> Marks : {{ a.marks }} </span>
+                    </div>
+
+                    <div class="py-2"><small> Start Date : {{ a.startDate | date:'dd-MM-yyyy' }}
+                        </small></div>
+                    <div class="py-2"><small> End Date : {{ a.endDate | date:'dd-MM-yyyy' }} </small>
+                    </div>
+                    <div class="py-2"><small> Status : {{ a.status }} </small>
+                    </div>
+                </mat-card>
+            </div>
+
+        </div>
+    </div>
+
+</div>

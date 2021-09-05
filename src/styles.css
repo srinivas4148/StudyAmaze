@@ -1,0 +1,295 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~katex/dist/katex.css';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+/* Swiper Styles */
+@import '~swiper/swiper-bundle';
+
+/* ag grid table fancy */
+@import "../node_modules/ag-grid-community/dist/styles/ag-grid.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+@import "../node_modules/ag-grid-community/dist/styles/ag-theme-material.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+*{
+    outline:none !important;
+}
+
+.active{
+    background:rgb(182, 182, 182);
+}
+.yes{
+    display: block !important;
+  }
+.no{
+    display: none !important;
+}
+.content-min-height{
+    min-height: 560px;
+}
+.js-sans{
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+.ml-auto{
+    margin-left:auto;
+}
+.mr-auto{
+    margin-right:auto;
+}
+.warn-bg{
+    background : rgba(255, 0, 0, 0.486);
+    color :white;
+}
+.grad-bg{
+    background : #b0d7ff47;
+}
+.btn-bg{
+    background : #00775F;
+    color : white;
+}
+.mini-text{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.global-color{
+    color: #00775F;
+}
+.global-bg{
+  background: #00775F;
+  color: white;
+}
+.global-bg {
+  background: #00775F;
+  color: white;
+}
+
+
+/* new template starts here */
+.welcome-area {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left top, #007984, #0a8c88, #24a783, #34bb85, #67cb7e)!important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  /* // latestbreadcumbs */
+  .fat-arrow-rappa {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 800px;
+  }
+  .fat-arrow {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    width: auto!important;
+    height: 30px;
+    position: relative;
+    background: #159886;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    margin-right: 20px;
+    color: white;
+    text-align: left;
+    line-height: 15px;
+    border-radius: 13px 0px 0px 13px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .fat-arrow div.inner {
+    width: auto;
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .fat-arrow:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .fat-arrow:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #ebbd9a;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+  .flo-arrow {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    left: 3px;
+    padding-left: 8px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .flo-arrow:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 7px solid #080a2d;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .flo-arrow:before {
+    content: "";
+    position: absolute;
+    right: -7px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 7px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  /* // new logo css  */
+  .loggg{
+    color: #1e098e;
+    font-family: cursive !important;
+    font-weight: 700;
+  }
+  .container2{
+    width:3em;
+  }
+  #hat,
+  #book,
+  #tick{
+    animation:show 2s;
+  }
+  .leaf{
+    opacity:0;
+    animation: move 2s ease-in-out normal infinite;
+  }
+  #leaf-1{
+     animation-delay:1s;
+  }
+  #leaf-2{
+     animation-delay:1.15s;
+  }
+  #leaf-3{
+     animation-delay:1.65s;
+  }
+  #leaf-4{
+     animation-delay:1.25s;
+  }
+  #leaf-5{
+     animation-delay:1.5s;
+  }
+  #leaf-6{
+     animation-delay:1.75s;
+  }
+  #leaf-7{
+     animation-delay:2s;
+  }
+  #leaf-8{
+     animation-delay:2.25s;
+  }
+  #leaf-9{
+     animation-delay:2.5s;
+  }
+  #leaf-10{
+     animation-delay:2.75s;
+  }
+  #leaf-11{
+     animation-delay:3s;
+  }
+  #leaf-12{
+     animation-delay:3.25s;
+  }
+  #leaf-13{
+     animation-delay:3.5s;
+  }
+  #leaf-14{
+     animation-delay:3.75s;
+  }
+  #leaf-15{
+     animation-delay:4s;
+  }
+  
+  @keyframes move {
+    0%{
+      opacity:0;
+    }
+    50%{
+      opacity:1;
+    }
+    100%{
+      opacity:0;
+    }
+  }
+  @keyframes show{
+    from{
+      opacity:0;
+    }
+    to{
+      opacity:1;
+    }
+  }
+  html, body { height: 100%;}
+  
+  .quest{
+    background: #186c84;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: inset 0 0 10px #186c84;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 600;
+  }
+  .fancy-select{
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+  }
+  /* search box css */
+  .search-field {
+    border-radius: 40px !important;
+    border-color: transparent !important;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2) !important;
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.2) !important;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.2) !important;
+    height: 44px;
+    padding: 10px;
+    background: aliceblue !important;
+  }
+  .half-wid{
+    width:64px;
+  }
+  .full-wid{
+    width:220px;
+  }

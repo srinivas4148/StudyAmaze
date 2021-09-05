@@ -1,0 +1,106 @@
+<div class="star">
+    <div class="head-tag text-center my-4 mx-5">
+        <h2>User Details</h2>
+        <hr>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row mx-auto">
+
+            <div class="col-md-4 mx-auto">
+
+                <div *ngFor="let info of User">
+                    <mat-card class="py-0">
+                        <mat-card-header>
+                            <mat-card-title class="mat-title py-1">{{ info.userName }}</mat-card-title>
+                            <mat-card-subtitle class="mat-sub-title py-1">{{ info.mobileNo }}</mat-card-subtitle>
+                            <!-- <mat-card-subtitle class="mat-sub-title py-1">{{ info.pointsInfo.registerPoints }}</mat-card-subtitle> -->
+                        </mat-card-header>
+                        <img mat-card-image src="../../../assets/login-vector.png" alt="Photo of a Shiba Inu">
+                    </mat-card>
+                </div>
+
+            </div>
+
+            <!-- CHECKING WITH TYPESCRIPT FUNCTIONALITY -->
+            <!-- <div class="col-md-5 mx-auto">
+    
+                <div>
+    
+                    <div *ngFor="let role of Roles">
+                        <label for="roles">
+                            <input type="checkbox" name="roles" value="{{role.rId}}" [attr.checked]="mode.indexOf(role.rId) > -1 ? true : null" (change)="updateCheckedOptions(role, $event)"/>
+                            {{ role.roleName }}
+                        </label>
+                    </div>
+    
+                </div>
+    
+            </div> -->
+
+            <div class="col-md-4 mx-auto">
+
+                <div id="active-roles" class="mx-5">
+                    <span>
+                        <p class="sub-head-line">Active Roles for the user</p>
+                    </span>
+                    <div *ngFor="let role of userRoles">
+                        <label for="roles">
+                            <!-- <input type="text" name="roles" value="{{role.rId}}"/> -->
+                            <span><button style="outline: none;" (click)="deleteRole(role.roleId)" mat-icon-button>
+                                    <mat-icon class="red-icon"> <i class="fas fa-trash fa-sm"></i> </mat-icon>
+                                </button></span>
+                            <span>{{ role.roleName }}</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="preceding-roles">
+                    <span>
+                        <p class="sub-head-line">Preceding roles of User</p>
+                    </span>
+                    <div *ngFor="let role of userPrecedingRoles" class="py-2">
+                        <span><small>{{ role.roleName }}</small></span>
+                        <span class="pull-right"><small>{{ role.from | date: 'd,MMM yyyy' }}-{{ role.to | date: 'd,MMM
+                                yyyy' }}</small></span>
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 mx-auto">
+
+                <div id="roles-to-assign" class="mx-5">
+                    <div>
+                        <span>
+                            <p class="sub-head-line">Roles to assign</p>
+                        </span>
+                        <!-- <span class="pull-right">
+                            <button mat-raised-button style="outline: none;background: #7e30e6;color: white;">Update</button>
+                        </span> -->
+                    </div>
+                    <div *ngFor="let role of Roles">
+                        <label for="roles" [ngClass]="mode.indexOf(role.rId) > -1 ? 'hide' : 'show'">
+                            <!-- <input type="checkbox" name="roles" value="{{role.rId}}" [disabled]="mode.indexOf(role.rId) > -1 ? true : null" [attr.checked]="mode.indexOf(role.rId) > -1 ? true : null" (change)="updateCheckedOptions(role, $event)"/> -->
+                            <span><button style="outline: none;" (click)="updateRole(role.rId)" mat-icon-button>
+                                    <mat-icon class="green-icon"> <i class="fas fa-check-circle fa-sm"></i> </mat-icon>
+                                </button></span>
+                            <span>{{ role.roleName }}</span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="col-md-2 mx-auto">
+                <div>
+                    <button mat-raised-button style="outline: none;background: #7e30e6;color: white;">Update</button>
+                </div>
+            </div> -->
+
+        </div>
+
+    </div>
+</div>

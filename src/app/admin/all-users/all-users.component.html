@@ -1,0 +1,38 @@
+<div class="star">
+    <div class="name-tag text-center">
+      <h2>All Users</h2>
+    </div>
+  
+    <section class="mx-5 mt-2 mb-4">
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;">
+          <thead>
+            <tr>
+              <!-- <th>userId</th> -->
+              <th>Id</th>
+              <th>Name</th>
+              <th>Mobile</th>
+              <!-- <th>Login Points</th>
+                <th>Referral Points</th> -->
+              <!-- <th>Points</th> -->
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+            <tr *ngFor="let user of Users" (click)="routeToUserDetails(user.userId)">
+              <!-- <td>{{ user.userId }}</td> -->
+              <td>{{ user.userId }}</td>
+              <td>{{ user.userName }}</td>
+              <td>{{ user.mobileNo }}</td>
+              <!-- <td>{{ user.pointsInfo.loginPoints }}</td>
+                <td>{{ user.pointsInfo.referralPoints }}</td> -->
+              <!-- <td>{{ user.pointsInfo.registerPoints }}</td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
